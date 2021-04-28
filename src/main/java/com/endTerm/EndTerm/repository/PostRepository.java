@@ -12,7 +12,7 @@ public class PostRepository {
     PostRepository(){
         System.out.println("*** Repository Created ***");
     }
-    @PersistenceUnit(unitName = "techblog")
+    @PersistenceUnit()
     private EntityManagerFactory entityManagerFactory;
     public List<Post> getAllPosts() {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
